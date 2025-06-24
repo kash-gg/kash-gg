@@ -19,7 +19,7 @@
 ## 📫 Get in Touch
 
 - [GitHub](https://github.com/kash-gg)
-- [LinkedIn]([https://www.linkedin.com/in/your-linkedin-here](https://www.linkedin.com/in/kashyup-gaud-865a50186/)) <!-- Replace with your LinkedIn handle -->
+- [LinkedIn]([https://www.linkedin.com/in/your-linkedin-here](https://www.linkedin.com/in/kashyup-gaud-865a50186/]) <!-- Replace with your LinkedIn handle -->
 <!-- Add more links as you like -->
 
 ## ♟️ Fun Fact

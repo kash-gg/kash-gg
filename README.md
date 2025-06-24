@@ -19,7 +19,8 @@
 ## 📫 Get in Touch
 
 - [GitHub](https://github.com/kash-gg)
-- [LinkedIn](# Hi there, I'm Kash! 👋
+- [LinkedIn](https://www.linkedin.com/in/kashyup-gaud-865a50186/)
+
 
 🎓 **Student | Aspiring Developer**
 

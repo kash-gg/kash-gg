@@ -35,7 +35,7 @@
 ## 🌟 Featured Project
 
 ### [Flexi PBL](https://github.com/kash-gg/Flexi-PBL)
-> An innovative project focused on flexible project-based learning.  
+> An innovative project focused on Fraud Detection using ML and Block-chain.  
 > _Check it out and see how I’m making a difference in learning!_
 
 ## 📫 Get in Touch

@@ -1,4 +1,4 @@
-# Hi there, I'm Kash! 👋
+# Hi there, I'm Kashyup! 👋
 
 🎓 **Student | Aspiring Developer**
 

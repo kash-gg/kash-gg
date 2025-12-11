@@ -14,12 +14,13 @@
 
 ## 🌟 Featured Project
 
-### 🚧 **Flexi PBL**
-> An innovative project focused on Fraud Detection using ML and Blockchain.  
-> _Check it out and see how I’m making a difference in learning!_
+### 🌐 **Self-Sovereign Identity (SSI) Progressive Web App**
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/kash-gg/Flexi-PBL)
+> A Progressive Web App for Academic Credential Verification using Decentralized Identifiers (DIDs) and Verifiable Credentials with MongoDB backend authentication.
+>
+> _Check it out and explore blockchain-based identity verification!_
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/kash-gg/Project_SSI)
 ---
 
 ## 📫 Get in Touch

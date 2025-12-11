@@ -91,6 +91,7 @@ PY
       - name: Commit & push
         run: |
           # Only proceed if README.md was modified by the Python script
+          # The git diff --exit-code command returns 0 if no changes exist
           if git diff --exit-code README.md > /dev/null; then
             echo "No changes to commit (README.md is unchanged)."
           else

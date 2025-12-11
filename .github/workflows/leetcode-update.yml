@@ -1,18 +1,16 @@
 name: Update LeetCode Stats
-
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:    # Allows manual trigger
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Fetch and Update LeetCode stats
         run: |
           # Fetch stats from LeetCode API
@@ -28,7 +26,7 @@ jobs:
           TOTAL=$(echo $stats | jq -r '.totalSolved')
           
           # Create Python script to update README
-          cat > update_readme.py << 'EOF'
+          cat > update_readme.py << 'PYTHON_EOF'
 import re
 import sys
 
@@ -49,11 +47,11 @@ for pattern, replacement in patterns:
 
 with open('README.md', 'w', encoding='utf-8') as f:
     f.write(content)
-EOF
+PYTHON_EOF
           
           # Run Python script with the fetched values
           python3 update_readme.py "$EASY" "$TOTAL_EASY" "$MEDIUM" "$TOTAL_MEDIUM" "$HARD" "$TOTAL_HARD" "$TOTAL"
-      
+
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"

@@ -44,4 +44,39 @@ I love playing chess! Let's play a match sometime.
 
 ---
 
+---
+
+## 💻 LeetCode Progress
+
+[![LeetCode user Kashyup_Gaud](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Kashyup_Gaud/)
+
+### Problem-Solving Journey
+
+| Category | Problems Solved | Difficulty Breakdown |
+|----------|-----------------|----------------------|
+| **Easy** | Problems | ![Easy](https://img.shields.io/badge/Easy-2ecc71?style=flat) |
+| **Medium** | Problems | ![Medium](https://img.shields.io/badge/Medium-f39c12?style=flat) |
+| **Hard** | Problems | ![Hard](https://img.shields.io/badge/Hard-e74c3c?style=flat) |
+| **Total** | Problems Solved | ![Total](https://img.shields.io/badge/Total-3498db?style=flat) |
+
+### Topics Mastered
+
+- 🔹 **Data Structures**: Arrays, Linked Lists, Trees, Graphs, Hash Maps, Stacks, Queues
+- 🔹 **Algorithms**: Sorting, Searching, Dynamic Programming, Recursion, Backtracking
+- 🔹 **Optimization**: Time & Space Complexity Analysis, Algorithm Optimization
+- 🔹 **Problem-Solving**: Pattern Recognition, Problem Decomposition, Edge Case Handling
+
+### Languages Used for Problem-Solving
+
+```
+🐍 Python    ████████░░ 45%
+🐱 C++       ██████░░░░ 30%
+📜 JavaScript ████░░░░░░ 20%
+☕ Java      ██░░░░░░░░  5%
+```
+
+> **Competitive Programming Philosophy**: "Consistency in problem-solving beats intensity in bursts. Every problem solved is a stepping stone to mastery."
+
+[Visit my LeetCode Profile →](https://leetcode.com/u/Kashyup_Gaud/)
+
 > _"Code is like chess: every move counts."_

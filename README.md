@@ -58,13 +58,11 @@ I love playing chess! Let's play a match sometime.
 
 | Category | Problems Solved | Difficulty Breakdown |
 |----------|-----------------|----------------------|
-| **Easy** | 49 | ![Easy](https://img.shields.io/49/916/Easy-2ecc71?style=flat) |
-| **Medium** |41 | ![Medium](https://img.shields.io/badge/Medium-f39c12?style=flat) |
-| **Hard** | 3 | ![Hard](https://img.shields.io/badge/Hard-e74c3c?style=flat) |
-| 93Total** | 141 Solved | ![Total](https://img.shields.io/badge/Total-3498db?style=flat) |
+| **Easy** | 49 | 🟢 Easy |
+| **Medium** | 41 | 🟠 Medium |
+| **Hard** | 3 | 🔴 Hard |
+| **Total** | 93 Solved | 🔵 Total |
 
 
-
-[LeetCode](https://leetcode.com/u/Kashyup_Gaud/)
 
 > _"Code is like chess: every move counts."_

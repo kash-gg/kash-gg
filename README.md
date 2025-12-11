@@ -16,19 +16,20 @@
 
 ### 🌐 **Self-Sovereign Identity (SSI) Progressive Web App**
 
-> A Progressive Web App for Academic Credential Verification using Decentralized Identifiers (DIDs) and Verifiable Credentials with MongoDB backend authentication.
->
+> A Progressive Web App for Academic Credential Verification using Decentralized Identifiers (DIDs) and Verifiable Credentials with MongoDB backend authentication.  
 > _Check it out and explore blockchain-based identity verification!_
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/kash-gg/Project_SSI)
 
+---
+
 ### 🚧 **Flexi PBL**
 
-> An innovative project focused on Fraud Detection using ML and Blockchain.
->
+> An innovative project focused on Fraud Detection using ML and Blockchain.  
 > _Check it out and see how I'm making a difference in learning!_
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/kash-gg/Flexi-PBL)
+
 ---
 
 ## 📫 Get in Touch
@@ -52,15 +53,21 @@ I love playing chess! Let's play a match sometime.
 
 > **Rank**: 1,458,672
 
+---
+
 ### Problem-Solving Journey
 
-| Category | Problems Solved |
-|----------|-----------------|
-| **Easy** | 49 | 
-| **Medium** | 41 |
-| **Hard** | 3 | 
-| **Total** | 93 Solved | 
+<!-- leetcode-stats-start -->
 
+| **Easy** | 49/?? |
+| **Medium** | 41/?? |
+| **Hard** | 3/?? |
+| **Total** | 93 Solved |
 
+> 93 problems solved
+
+<!-- leetcode-stats-end -->
+
+---
 
 > _"Code is like chess: every move counts."_

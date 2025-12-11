@@ -12,7 +12,7 @@
 
 ---
 
-## 🌟 Featured Project
+## 🌟 Featured Projects
 
 ### 🌐 **Self-Sovereign Identity (SSI) Progressive Web App**
 
@@ -21,6 +21,14 @@
 > _Check it out and explore blockchain-based identity verification!_
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/kash-gg/Project_SSI)
+
+### 🚧 **Flexi PBL**
+
+> An innovative project focused on Fraud Detection using ML and Blockchain.
+>
+> _Check it out and see how I'm making a difference in learning!_
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/kash-gg/Flexi-PBL)
 ---
 
 ## 📫 Get in Touch

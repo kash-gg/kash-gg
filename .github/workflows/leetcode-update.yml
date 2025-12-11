@@ -25,32 +25,12 @@ jobs:
           TOTAL_HARD=$(echo $stats | jq -r '.totalHard')
           TOTAL=$(echo $stats | jq -r '.totalSolved')
           
-          # Create Python script to update README
-          cat > update_readme.py << 'PYTHON_EOF'
-import re
-import sys
-
-with open('README.md', 'r', encoding='utf-8') as f:
-    content = f.read()
-
-# Replace the stats in the table
-patterns = [
-    (r'\| \*\*Easy\*\*\s*\|\s*\d+/\d+\s*\|', f'| **Easy** | {sys.argv[1]}/{sys.argv[2]} |'),
-    (r'\| \*\*Medium\*\*\s*\|\s*\d+/\d+\s*\|', f'| **Medium** | {sys.argv[3]}/{sys.argv[4]} |'),
-    (r'\| \*\*Hard\*\*\s*\|\s*\d+/\d+\s*\|', f'| **Hard** | {sys.argv[5]}/{sys.argv[6]} |'),
-    (r'\| \*\*Total\*\*\s*\|\s*\d+ Solved\s*\|', f'| **Total** | {sys.argv[7]} Solved |'),
-    (r'> \d+ problems solved', f'> {sys.argv[7]} problems solved'),
-]
-
-for pattern, replacement in patterns:
-    content = re.sub(pattern, replacement, content)
-
-with open('README.md', 'w', encoding='utf-8') as f:
-    f.write(content)
-PYTHON_EOF
-          
-          # Run Python script with the fetched values
-          python3 update_readme.py "$EASY" "$TOTAL_EASY" "$MEDIUM" "$TOTAL_MEDIUM" "$HARD" "$TOTAL_HARD" "$TOTAL"
+          # Update README using sed
+          sed -i "s/| \*\*Easy\*\* |.*|/| **Easy** | $EASY\/$TOTAL_EASY |/g" README.md
+          sed -i "s/| \*\*Medium\*\* |.*|/| **Medium** | $MEDIUM\/$TOTAL_MEDIUM |/g" README.md
+          sed -i "s/| \*\*Hard\*\* |.*|/| **Hard** | $HARD\/$TOTAL_HARD |/g" README.md
+          sed -i "s/| \*\*Total\*\* |.*Solved |/| **Total** | $TOTAL Solved |/g" README.md
+          sed -i "s/> .* problems solved/> $TOTAL problems solved/g" README.md
 
       - name: Commit changes
         run: |

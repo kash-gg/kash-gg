@@ -39,7 +39,7 @@ jobs:
           TOTAL_HARD=$(echo "$stats" | jq -r '.totalHard // empty')
           TOTAL=$(echo "$stats" | jq -r '.totalSolved // empty')
 
-          cat > new_stats.md <<EOF
+          cat > new_stats.md <<'EOF'
    | Difficulty | Solved |
    |-----------|--------|
    | 🟩 **Easy** | ${EASY}/${TOTAL_EASY} |

@@ -39,16 +39,7 @@ jobs:
           TOTAL_HARD=$(echo "$stats" | jq -r '.totalHard // empty')
           TOTAL=$(echo "$stats" | jq -r '.totalSolved // empty')
 
-          cat > new_stats.md <<'EOF'
-   | Difficulty | Solved |
-   |-----------|--------|
-   | 🟩 **Easy** | ${EASY}/${TOTAL_EASY} |
-   | 🟧 **Medium** | ${MEDIUM}/${TOTAL_MEDIUM} |
-   | 🟥 **Hard** | ${HARD}/${TOTAL_HARD} |
-   | ⭐ **Total** | ${TOTAL} Solved |
-
-> ${TOTAL} problems solved
-EOF
+          printf '| Difficulty | Solved |\n|-----------|----------|\n| 🟩 **Easy** | %s/%s |\n| 🟧 **Medium** | %s/%s |\n| 🟥 **Hard** | %s/%s |\n| ⭐ **Total** | %s Solved |\n> %s problems solved' "$EASY" "$TOTAL_EASY" "$MEDIUM" "$TOTAL_MEDIUM" "$HARD" "$TOTAL_HARD" "$TOTAL" "$TOTAL" > new_stats.md
 
       - name: Replace README block between markers
         run: |

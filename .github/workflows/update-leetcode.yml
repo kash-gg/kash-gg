@@ -24,7 +24,7 @@ jobs:
       - name: Fetch LeetCode stats and build new block
         env:
           LC_USER: "Kashyup_Gaud"
-        run: |
+        run: |-
           set -euo pipefail
           echo "Fetching LeetCode stats for $LC_USER..."
           stats=$(curl -sS "https://leetcode-stats-api.herokuapp.com/$LC_USER" || true)
@@ -40,12 +40,12 @@ jobs:
           TOTAL=$(echo "$stats" | jq -r '.totalSolved // empty')
 
           cat > new_stats.md <<EOF
- | Difficulty | Solved |
- |-----------|--------|
- | 🟩 **Easy** | ${EASY}/${TOTAL_EASY} |
- | 🟧 **Medium** | ${MEDIUM}/${TOTAL_MEDIUM} |
- | 🟥 **Hard** | ${HARD}/${TOTAL_HARD} |
- | ⭐ **Total** | ${TOTAL} Solved |
+   | Difficulty | Solved |
+   |-----------|--------|
+   | 🟩 **Easy** | ${EASY}/${TOTAL_EASY} |
+   | 🟧 **Medium** | ${MEDIUM}/${TOTAL_MEDIUM} |
+   | 🟥 **Hard** | ${HARD}/${TOTAL_HARD} |
+   | ⭐ **Total** | ${TOTAL} Solved |
 
 > ${TOTAL} problems solved
 EOF

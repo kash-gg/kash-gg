@@ -1,0 +1,81 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # runs every day at midnight UTC
+  workflow_dispatch:       # manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Fetch LeetCode stats and update README
+        env:
+          LC_USER: "Kashyup_Gaud"
+        run: |
+          set -e
+
+          echo "Fetching LeetCode stats..."
+          stats=$(curl -s "https://leetcode-stats-api.herokuapp.com/$LC_USER")
+
+          echo "API Response:"
+          echo "$stats"
+
+          EASY=$(echo "$stats" | jq -r '.easySolved')
+          TOTAL_EASY=$(echo "$stats" | jq -r '.totalEasy')
+          MEDIUM=$(echo "$stats" | jq -r '.mediumSolved')
+          TOTAL_MEDIUM=$(echo "$stats" | jq -r '.totalMedium')
+          HARD=$(echo "$stats" | jq -r '.hardSolved')
+          TOTAL_HARD=$(echo "$stats" | jq -r '.totalHard')
+          TOTAL=$(echo "$stats" | jq -r '.totalSolved')
+
+          cat > new_stats.md <<EOF
+| Difficulty | Solved |
+|-----------|--------|
+| 🟩 **Easy** | $EASY/$TOTAL_EASY |
+| 🟧 **Medium** | $MEDIUM/$TOTAL_MEDIUM |
+| 🟥 **Hard** | $HARD/$TOTAL_HARD |
+| ⭐ **Total** | $TOTAL Solved |
+
+> $TOTAL problems solved
+EOF
+
+          python3 update.py << 'EOF'
+import pathlib
+
+readme = pathlib.Path("README.md").read_text()
+start = "<!-- leetcode-stats-start -->"
+end = "<!-- leetcode-stats-end -->"
+
+with open("new_stats.md") as f:
+    new_block = f.read().strip()
+
+before = readme.split(start)[0]
+after = readme.split(end)[1]
+
+updated = before + start + "\n\n" + new_block + "\n\n" + end + after
+pathlib.Path("README.md").write_text(updated)
+print("README updated!")
+EOF
+
+      - name: Commit & push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Update LeetCode stats"
+          git push

@@ -50,9 +50,7 @@ I love playing chess! Let's play a match sometime.
 
 [![LeetCode user Kashyup_Gaud](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Kashyup_Gaud/)
 
-> **Rank**: Top 15% globally | **Consistency**: Daily Problem Solving
-
-> 93 problems solved • Mastering DSA & Advanced Algorithms
+> **Rank**: 1,458,672
 
 ### Problem-Solving Journey
 

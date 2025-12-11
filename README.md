@@ -45,8 +45,6 @@ I love playing chess! Let's play a match sometime.
 
 ---
 
----
-
 ## 💻 LeetCode Progress
 
 [![LeetCode user Kashyup_Gaud](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Kashyup_Gaud/)
@@ -55,14 +53,17 @@ I love playing chess! Let's play a match sometime.
 
 ---
 
-### Problem-Solving Journey
+### 🧩 Problem-Solving Journey  
+*(Auto-updated daily)*
 
 <!-- leetcode-stats-start -->
 
-| **Easy** | 49/?? |
-| **Medium** | 41/?? |
-| **Hard** | 3/?? |
-| **Total** | 93 Solved |
+| Difficulty | Solved |
+|-----------|--------|
+| 🟩 **Easy** | 49 |
+| 🟧 **Medium** | 41 |
+| 🟥 **Hard** | 3 |
+| ⭐ **Total** | 93 Solved |
 
 > 93 problems solved
 

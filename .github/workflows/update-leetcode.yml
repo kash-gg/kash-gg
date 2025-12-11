@@ -1,9 +1,11 @@
 name: Update LeetCode Stats
 
 on:
+  # Daily at midnight UTC
   schedule:
-    - cron: "0 0 * * *"   # daily at midnight UTC
-  workflow_dispatch:      # allow manual runs
+    - cron: "0 0 * * *"
+  # Allows manual runs from the Actions tab
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,23 +16,28 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Recommended to use the latest version
         with:
           fetch-depth: 0
 
-      - name: Install jq
+      - name: Install Python and jq
+        # Python 3 is pre-installed on GitHub runners, but we ensure jq is present
         run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Fetch LeetCode stats and build new block
         env:
+          # IMPORTANT: Change "Kashyup_Gaud" to your actual LeetCode username
           LC_USER: "Kashyup_Gaud"
-        run: |-
+        run: |
           set -euo pipefail
           echo "Fetching LeetCode stats for $LC_USER..."
+          
+          # Use the API to fetch data
           stats=$(curl -sS "https://leetcode-stats-api.herokuapp.com/$LC_USER" || true)
           echo "API response:"
           echo "$stats"
 
+          # Parse JSON stats using jq
           EASY=$(echo "$stats" | jq -r '.easySolved // empty')
           TOTAL_EASY=$(echo "$stats" | jq -r '.totalEasy // empty')
           MEDIUM=$(echo "$stats" | jq -r '.mediumSolved // empty')
@@ -39,39 +46,58 @@ jobs:
           TOTAL_HARD=$(echo "$stats" | jq -r '.totalHard // empty')
           TOTAL=$(echo "$stats" | jq -r '.totalSolved // empty')
 
-          printf '| Difficulty | Solved |\n|-----------|----------|\n| 🟩 **Easy** | %s/%s |\n| 🟧 **Medium** | %s/%s |\n| 🟥 **Hard** | %s/%s |\n| ⭐ **Total** | %s Solved |\n> %s problems solved' "$EASY" "$TOTAL_EASY" "$MEDIUM" "$TOTAL_MEDIUM" "$HARD" "$TOTAL_HARD" "$TOTAL" "$TOTAL" > new_stats.md
+          # Build the markdown table
+          printf '| Difficulty | Solved |\n|-----------|----------|\n| 🟩 **Easy** | %s/%s |\n| 🟧 **Medium** | %s/%s |\n| 🟥 **Hard** | %s/%s |\n| ⭐ **Total** | **%s** Solved |\n\n> %s problems solved' "$EASY" "$TOTAL_EASY" "$MEDIUM" "$TOTAL_MEDIUM" "$HARD" "$TOTAL_HARD" "$TOTAL" "$TOTAL" > new_stats.md
 
       - name: Replace README block between markers
         run: |
           python3 - <<'PY'
 from pathlib import Path
-p = Path("README.md")
-text = p.read_text(encoding="utf-8")
-start = "<!-- leetcode-stats-start -->"
-end = "<!-- leetcode-stats-end -->"
-new_block = Path("new_stats.md").read_text(encoding="utf-8").strip()
-if start in text and end in text:
-    before, rest = text.split(start, 1)
-    _, after = rest.split(end, 1)
-    updated = before + start + "\n\n" + new_block + "\n\n" + end + after
-    if updated != text:
-        p.write_text(updated, encoding="utf-8")
-        print("README updated")
+
+# Set paths
+readme_path = Path("README.md")
+new_stats_path = Path("new_stats.md")
+start_marker = ""
+end_marker = ""
+
+# Read files
+try:
+    text = readme_path.read_text(encoding="utf-8")
+    new_block = new_stats_path.read_text(encoding="utf-8").strip()
+except FileNotFoundError:
+    print("Error: README.md or new_stats.md not found.")
+    raise SystemExit(1)
+
+# Check for markers and update the content
+if start_marker in text and end_marker in text:
+    # Split the text into three parts: before marker, stats block, and after marker
+    before, rest = text.split(start_marker, 1)
+    _, after = rest.split(end_marker, 1)
+    
+    # Construct the updated content
+    updated = before + start_marker + "\n" + new_block + "\n" + end_marker + after
+
+    # Check if a change actually occurred before writing
+    if updated.strip() != text.strip():
+        readme_path.write_text(updated, encoding="utf-8")
+        print("README updated and changes will be committed.")
     else:
-        print("No change to README")
+        print("No change detected in LeetCode stats.")
 else:
-    print("Markers not found in README.md")
+    print("Error: Markers not found in README.md. Ensure you have '' and '' exactly.")
     raise SystemExit(1)
 PY
 
       - name: Commit & push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md || true
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
+          # Only proceed if README.md was modified by the Python script
+          if git diff --exit-code README.md > /dev/null; then
+            echo "No changes to commit (README.md is unchanged)."
           else
-            git commit -m "Update LeetCode stats" || true
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add README.md
+            git commit -m "🤖 Update LeetCode stats"
             git push
+            echo "Changes committed and pushed."
           fi

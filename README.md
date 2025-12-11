@@ -54,12 +54,12 @@ I love playing chess! Let's play a match sometime.
 
 ### Problem-Solving Journey
 
-| Category | Problems Solved | Difficulty Breakdown |
-|----------|-----------------|----------------------|
-| **Easy** | 49 | 🟢 Easy |
-| **Medium** | 41 | 🟠 Medium |
-| **Hard** | 3 | 🔴 Hard |
-| **Total** | 93 Solved | 🔵 Total |
+| Category | Problems Solved |
+|----------|-----------------|
+| **Easy** | 49 | 
+| **Medium** | 41 |
+| **Hard** | 3 | 
+| **Total** | 93 Solved | 
 
 
 

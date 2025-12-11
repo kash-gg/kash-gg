@@ -40,12 +40,12 @@ jobs:
           TOTAL=$(echo "$stats" | jq -r '.totalSolved // empty')
 
           cat > new_stats.md <<EOF
-| Difficulty | Solved |
-|-----------|--------|
-| 🟩 **Easy** | ${EASY}/${TOTAL_EASY} |
-| 🟧 **Medium** | ${MEDIUM}/${TOTAL_MEDIUM} |
-| 🟥 **Hard** | ${HARD}/${TOTAL_HARD} |
-| ⭐ **Total** | ${TOTAL} Solved |
+ | Difficulty | Solved |
+ |-----------|--------|
+ | 🟩 **Easy** | ${EASY}/${TOTAL_EASY} |
+ | 🟧 **Medium** | ${MEDIUM}/${TOTAL_MEDIUM} |
+ | 🟥 **Hard** | ${HARD}/${TOTAL_HARD} |
+ | ⭐ **Total** | ${TOTAL} Solved |
 
 > ${TOTAL} problems solved
 EOF

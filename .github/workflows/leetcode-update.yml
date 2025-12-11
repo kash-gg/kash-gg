@@ -1,0 +1,59 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Fetch LeetCode stats
+        id: leetcode
+        run: |
+          # Fetch stats from LeetCode API
+          curl -s "https://leetcode-stats-api.herokuapp.com/Kashyup_Gaud" > stats.json
+          
+          # Extract values
+          EASY=$(jq -r '.easySolved' stats.json)
+          TOTAL_EASY=$(jq -r '.totalEasy' stats.json)
+          MEDIUM=$(jq -r '.mediumSolved' stats.json)
+          TOTAL_MEDIUM=$(jq -r '.totalMedium' stats.json)
+          HARD=$(jq -r '.hardSolved' stats.json)
+          TOTAL_HARD=$(jq -r '.totalHard' stats.json)
+          TOTAL=$(jq -r '.totalSolved' stats.json)
+          RANK=$(jq -r '.ranking' stats.json)
+          
+          # Output for use in later steps
+          echo "easy=$EASY/$TOTAL_EASY" >> $GITHUB_OUTPUT
+          echo "medium=$MEDIUM/$TOTAL_MEDIUM" >> $GITHUB_OUTPUT
+          echo "hard=$HARD/$TOTAL_HARD" >> $GITHUB_OUTPUT
+          echo "total=$TOTAL" >> $GITHUB_OUTPUT
+          echo "rank=$RANK" >> $GITHUB_OUTPUT
+      
+      - name: Update README
+        run: |
+          # Read current README
+          content=$(cat README.md)
+          
+          # Replace stats in the table
+          content="${content/Easy: 49/1966/Easy: ${{ steps.leetcode.outputs.easy }}/}"
+          content="${content/Medium: 41/1966/Medium: ${{ steps.leetcode.outputs.medium }}/}"
+          content="${content/Hard: 3/891/Hard: ${{ steps.leetcode.outputs.hard }}/}"
+          content="${content/Total: 93/Total: ${{ steps.leetcode.outputs.total }}/}"
+          
+          # Write back to README
+          echo "$content" > README.md
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update LeetCode stats" || exit 0
+          git push

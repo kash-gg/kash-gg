@@ -2,8 +2,8 @@ name: Update LeetCode Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # daily at midnight UTC
-  workflow_dispatch:      # manual trigger
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -47,24 +47,23 @@ jobs:
           TOTAL_HARD=${TOTAL_HARD:-0}
           TOTAL=${TOTAL:-0}
 
-          cat > new_stats.md <<EOF
+          cat > new_stats.md <<'EOF'
 | Difficulty | Solved |
 |-----------|--------|
-| 🟩 **Easy** | ${EASY}/${TOTAL_EASY} |
-| 🟧 **Medium** | ${MEDIUM}/${TOTAL_MEDIUM} |
-| 🟥 **Hard** | ${HARD}/${TOTAL_HARD} |
-| ⭐ **Total** | ${TOTAL} Solved |
+| 🟩 **Easy** | '${EASY}/${TOTAL_EASY}' |
+| 🟧 **Medium** | '${MEDIUM}/${TOTAL_MEDIUM}' |
+| 🟥 **Hard** | '${HARD}/${TOTAL_HARD}' |
+| ⭐ **Total** | '${TOTAL} Solved' |
 
-> ${TOTAL} problems solved
+> '${TOTAL} problems solved'
 EOF
 
-      - name: Safely update README between markers (create markers if missing)
+      - name: Safely update README between markers (create if missing)
         run: |
           python3 - <<'PY'
 from pathlib import Path
 p = Path("README.md")
 if not p.exists():
-    print("README.md not found in repo root. Creating a minimal README.md with markers.")
     p.write_text("# README\n\n<!-- leetcode-stats-start -->\n<!-- leetcode-stats-end -->\n", encoding="utf-8")
 
 text = p.read_text(encoding="utf-8")
@@ -88,25 +87,33 @@ else:
     print("No change to README.")
 PY
 
-      - name: Commit & push (tries default, falls back to PAT)
-        env:
-          REPO: ${{ github.repository }}
+      - name: Commit & push (try default push; fall back to PAT if needed)
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "Update LeetCode stats" || true
-
-            # Try normal push first
-            if git push; then
-              echo "Pushed with default auth"
-            else
-              echo "Default push failed — trying with PAT"
-              # Requires a repo secret named PAT with a token that has repo scope
-              git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
-              git push origin HEAD:${{ github.ref_name }}
-            fi
+            exit 0
           fi
+          git commit -m "Update LeetCode stats" || true
+
+          # extract branch name from GITHUB_REF (refs/heads/<branch>)
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          echo "Branch detected: $BRANCH"
+
+          if git push origin "HEAD:$BRANCH"; then
+            echo "Pushed successfully with default auth"
+          else
+            echo "Default push failed — attempting push using PAT"
+            # requires you to add a secret named PAT with a token that has repo scope
+            if [ -z "${PAT:-}" ]; then
+              echo "PAT secret is not available; cannot push."
+              exit 1
+            fi
+            git remote set-url origin "https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git"
+            git push origin "HEAD:$BRANCH"
+          fi
+        env:
+          # PAT must be stored as repo secret named PAT if you want fallback
+          PAT: ${{ secrets.PAT }}

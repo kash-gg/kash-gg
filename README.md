@@ -52,29 +52,19 @@ I love playing chess! Let's play a match sometime.
 
 > **Rank**: Top 15% globally | **Consistency**: Daily Problem Solving
 
-> 141 problems solved • Mastering DSA & Advanced Algorithms
+> 93 problems solved • Mastering DSA & Advanced Algorithms
 
 ### Problem-Solving Journey
 
 | Category | Problems Solved | Difficulty Breakdown |
 |----------|-----------------|----------------------|
-| **Easy** | 45 | ![Easy](https://img.shields.io/badge/Easy-2ecc71?style=flat) |
-| **Medium** | 68 | ![Medium](https://img.shields.io/badge/Medium-f39c12?style=flat) |
-| **Hard** | 28 | ![Hard](https://img.shields.io/badge/Hard-e74c3c?style=flat) |
-| **Total** | 141 Solved | ![Total](https://img.shields.io/badge/Total-3498db?style=flat) |
+| **Easy** | 49 | ![Easy](https://img.shields.io/49/916/Easy-2ecc71?style=flat) |
+| **Medium** |41 | ![Medium](https://img.shields.io/badge/Medium-f39c12?style=flat) |
+| **Hard** | 3 | ![Hard](https://img.shields.io/badge/Hard-e74c3c?style=flat) |
+| 93Total** | 141 Solved | ![Total](https://img.shields.io/badge/Total-3498db?style=flat) |
 
 
-### Languages Used for Problem-Solving
 
-```
-🐍 Python    ████████░░ 45%
-🐱 C++       ██████░░░░ 30%
-📜 JavaScript ████░░░░░░ 20%
-☕ Java      ██░░░░░░░░  5%
-```
-
-> **Competitive Programming Philosophy**: "Consistency in problem-solving beats intensity in bursts. Every problem solved is a stepping stone to mastery."
-
-[Visit my LeetCode Profile →](https://leetcode.com/u/Kashyup_Gaud/)
+[LeetCode](https://leetcode.com/u/Kashyup_Gaud/)
 
 > _"Code is like chess: every move counts."_

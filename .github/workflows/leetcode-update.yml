@@ -1,9 +1,8 @@
 name: Update LeetCode Stats
 
-# run daily and allow manual runs
 on:
   schedule:
-    - cron: '0 0 * * *'  # daily at 00:00 UTC
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,91 +11,64 @@ permissions:
 jobs:
   update-stats:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
-      - name: Install jq (for JSON parsing)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y jq
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Fetch LeetCode stats and prepare README update
-        env:
-          LC_USER: "Kashyup_Gaud"
+      - name: Fetch LeetCode stats
         run: |
-          set -euo pipefail
-          echo "Fetching LeetCode stats for $LC_USER ..."
-          stats=$(curl -sS "https://leetcode-stats-api.herokuapp.com/$LC_USER" || true)
-          echo "API response:"
+          stats=$(curl -s "https://leetcode-stats-api.herokuapp.com/Kashyup_Gaud")
+          echo "Stats received:"
           echo "$stats"
-          
-          if [ -z "$stats" ] || [ "$stats" = "null" ]; then
-            echo "No stats returned — aborting update."
-            exit 0
-          fi
 
-          # attempt to parse keys; fail early if unavailable
-          EASY=$(echo "$stats" | jq -r '.easySolved // empty')
-          TOTAL_EASY=$(echo "$stats" | jq -r '.totalEasy // empty')
-          MEDIUM=$(echo "$stats" | jq -r '.mediumSolved // empty')
-          TOTAL_MEDIUM=$(echo "$stats" | jq -r '.totalMedium // empty')
-          HARD=$(echo "$stats" | jq -r '.hardSolved // empty')
-          TOTAL_HARD=$(echo "$stats" | jq -r '.totalHard // empty')
-          TOTAL=$(echo "$stats" | jq -r '.totalSolved // empty')
-          
-          echo "Parsed: EASY=$EASY MEDIUM=$MEDIUM HARD=$HARD TOTAL=$TOTAL"
-          
-          # create a stable markdown block that we will insert between markers
-          cat > new_stats.md <<EOF
-| **Easy** | $EASY/$TOTAL_EASY |
-| **Medium** | $MEDIUM/$TOTAL_MEDIUM |
-| **Hard** | $HARD/$TOTAL_HARD |
-| **Total** | $TOTAL Solved |
+          EASY=$(echo "$stats" | jq -r '.easySolved')
+          TOTAL_EASY=$(echo "$stats" | jq -r '.totalEasy')
+          MEDIUM=$(echo "$stats" | jq -r '.mediumSolved')
+          TOTAL_MEDIUM=$(echo "$stats" | jq -r '.totalMedium')
+          HARD=$(echo "$stats" | jq -r '.hardSolved')
+          TOTAL_HARD=$(echo "$stats" | jq -r '.totalHard')
+          TOTAL=$(echo "$stats" | jq -r '.totalSolved')
+
+          cat > stats.md <<EOF
+| Difficulty | Solved |
+|-----------|--------|
+| 🟩 **Easy** | $EASY/$TOTAL_EASY |
+| 🟧 **Medium** | $MEDIUM/$TOTAL_MEDIUM |
+| 🟥 **Hard** | $HARD/$TOTAL_HARD |
+| ⭐ **Total** | $TOTAL Solved |
+
 > $TOTAL problems solved
 EOF
 
-          # Ensure the README has the marker lines. If not, print a hint and fail safely.
-          if ! grep -q "<!-- leetcode-stats-start -->" README.md || ! grep -q "<!-- leetcode-stats-end -->" README.md; then
-            echo "README.md is missing the marker comments. Please add these around the section you want updated:"
-            echo "<!-- leetcode-stats-start -->"
-            echo "<!-- leetcode-stats-end -->"
-            exit 1
-          fi
+      - name: Update README
+        run: |
+          python3 - << 'EOF'
+import pathlib
 
-          # Use python to replace the block between markers with the new content (preserves newline handling)
-          python3 - <<PY
-import os
-from pathlib import Path
-rfile = Path("README.md")
-old = rfile.read_text(encoding="utf-8")
+readme_path = pathlib.Path("README.md")
+content = readme_path.read_text()
+
 start = "<!-- leetcode-stats-start -->"
 end = "<!-- leetcode-stats-end -->"
-newblock = open("new_stats.md", "r", encoding="utf-8").read().strip()
-if start in old and end in old:
-    prefix, rest = old.split(start,1)
-    _, suffix = rest.split(end,1)
-    replaced = prefix + start + "\n\n" + newblock + "\n\n" + end + suffix
-    if replaced == old:
-        print("No changes to README.md")
-    else:
-        rfile.write_text(replaced, encoding="utf-8")
-        print("README.md updated")
-else:
-    print("Markers not found in README.md; please add them.")
-    raise SystemExit(1)
-PY
 
-      - name: Commit & push if changed
+with open("stats.md") as f:
+    new_stats = f.read().strip()
+
+before = content.split(start)[0]
+after = content.split(end)[1]
+
+updated = before + start + "\n\n" + new_stats + "\n\n" + end + after
+readme_path.write_text(updated)
+EOF
+
+      - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md || true
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Update LeetCode stats"
-            git push
-          fi
+          git add README.md
+          git diff --cached --quiet || git commit -m "Update stats"
+          git push

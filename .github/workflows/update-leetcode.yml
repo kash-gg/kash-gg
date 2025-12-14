@@ -35,7 +35,7 @@ jobs:
           
           # Fetch stats, ensure API response is successful before proceeding
           # The -f flag prevents curl from outputting on HTTP error codes (4xx/5xx)
-          stats=$(curl -sS -f "https://leetcode-stats-api.herokuapp.com/$LC_USER") || {
+          stats=$(curl -sS -f "https://leetcode-api.vercel.app/$LC_USERR") || {
             echo "::warning::Failed to fetch LeetCode stats for $LC_USER. Skipping update."
             # Set a special exit code to skip subsequent commit steps gracefully
             exit 78
@@ -103,7 +103,7 @@ PY
       - name: ⬆️ Commit & push changes
         # Use a single, clean step for committing and pushing.
         # This simplifies the complex conditional push logic from the original.
-        uses: stefanprodan/commit-and-push@v6
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           # Uses GITHUB_TOKEN automatically, granted write access by permissions: write
           author: "GitHub Actions <action@github.com>"

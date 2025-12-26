@@ -6,10 +6,6 @@
   <p>
     <strong>🚀 Student | Aspiring Developer | Competitive Programmer</strong>
   </p>
-  <p>
-    <img src="https://img.shields.io/badge/Status-Building_Awesome_Things-brightgreen?style=flat-square" alt="status" />
-    <img src="https://img.shields.io/badge/Focus-DSA_&_Web_Dev-blue?style=flat-square" alt="focus" />
-  </p>
 </div>
 
 ---
@@ -71,37 +67,7 @@
 
 ---
 
-## 🎮 Fun Fact
 
-<div align="center">
-  <p>
-    <strong>🚀 "Code is like chess: every move counts."</strong>
-  </p>
-  <p>
-    I'm an avid chess player! Always up for a match. ♛️
-  </p>
-</div>
-
----
-
-## 🔗 Connect With Me
-
-<div align="center">
-  <a href="https://github.com/kash-gg" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub" />
-  </a>
-  <a href="https://www.linkedin.com/in/kashyup-gaud-865a50186/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
-  </a>
-  <a href="https://leetcode.com/u/Kashyup_Gaud/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode" alt="LeetCode" />
-  </a>
-  <a href="https://kashyup-gaud.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-4A4A4A?style=for-the-badge&logo=firefox" alt="Portfolio" />
-  </a>
-</div>
-
----
 
 ## ⚡ Tech Stack
 
@@ -132,9 +98,31 @@
 
 ---
 
+## 🔗 Connect With Me
+
+<div align="center">
+  <a href="https://github.com/kash-gg" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/kashyup-gaud-865a50186/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+  </a>
+  <a href="https://leetcode.com/u/Kashyup_Gaud/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode" alt="LeetCode" />
+  </a>
+  <a href="https://kashyup-gaud.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-4A4A4A?style=for-the-badge&logo=firefox" alt="Portfolio" />
+  </a>
+</div>
+
+
+## 🎮 Fun Fact
+
 <div align="center">
   <p>
-    <strong>🌟 Every problem is an opportunity to learn something new! 🌟</strong>
+    <strong>🚀 "Code is like chess: every move counts."</strong>
   </p>
-  <p><strong>Happy Coding! 🎉</strong></p>
+ 
 </div>
+
+---

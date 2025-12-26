@@ -72,3 +72,10 @@ I love playing chess! Let's play a match sometime.
 ---
 
 > _"Code is like chess: every move counts."_
+
+
+---
+
+## 📊 LeetCode Stats
+
+[![Leetcode Stats](https://leetcard.jacoblin.cool/Kashyup_Gaud)](https://leetcode.com/Kashyup_Gaud)

@@ -32,6 +32,10 @@
 
 ---
 
+## 📊 LeetCode Stats
+
+[![Leetcode Stats](https://leetcard.jacoblin.cool/Kashyup_Gaud)](https://leetcode.com/Kashyup_Gaud)
+
 ## 📫 Get in Touch
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kash-gg)
@@ -45,14 +49,6 @@ I love playing chess! Let's play a match sometime.
 
 ---
 
-## 📊 LeetCode Stats
-
-[![Leetcode Stats](https://leetcard.jacoblin.cool/Kashyup_Gaud)](https://leetcode.com/Kashyup_Gaud)
-
----
-
 > _"Code is like chess: every move counts."_
 
-
----
 

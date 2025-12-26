@@ -16,8 +16,6 @@
 
 ## ✨ About Me
 
-<img align="right" width="250" src="https://media.giphy.com/media/SWoRKslHVtqgMwv373/giphy.gif" alt="coding" />
-
 - 💻 **Passionate** about solving complex problems through elegant code
 - 🎓 **Currently learning** and building with **Python, C++, Java, JavaScript, SQL**
 - 🔍 **Always exploring** cutting-edge technologies and innovations
@@ -38,7 +36,7 @@
 
 > A Progressive Web App for Academic Credential Verification using Decentralized Identifiers (DIDs) and Verifiable Credentials with MongoDB backend authentication.
 
-**Technologies**: React | Node.js | MongoDB | Blockchain | Web3
+**Tech Stack**: React | Node.js | MongoDB | Blockchain | Web3
 
 ---
 
@@ -52,7 +50,7 @@
 
 > An innovative project leveraging Machine Learning and Blockchain for intelligent fraud detection and prevention.
 
-**Technologies**: Python | ML/AI | Blockchain | Data Analysis
+**Tech Stack**: Python | ML/AI | Blockchain | Data Analysis
 
 ---
 
@@ -128,13 +126,8 @@
 ---
 
 <div align="center">
-  <h3>📄 Profile Statistics</h3>
-  
-  ![Profile Views](https://komarev.com/ghpvc/?username=kash-gg&color=0047AB&style=flat-square)
-  
-  [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kash-gg&theme=dark&hide_border=true&show_icons=true)](https://github.com/kash-gg)
-  
-  [![GitHub Streak](https://streak-stats.demolab.com?user=kash-gg&theme=dark)](https://github.com/kash-gg)
+  <h3>📄 Profile Views</h3>
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=kash-gg&style=flat-square&color=blue" />
 </div>
 
 ---
@@ -142,9 +135,6 @@
 <div align="center">
   <p>
     <strong>🌟 Every problem is an opportunity to learn something new! 🌟</strong>
-  </p>
-  <p>
-    <img src="https://media.giphy.com/media/L1R1tvI9svkIWwSZaZ/giphy.gif" width="80" alt="success" />
   </p>
   <p><strong>Happy Coding! 🎉</strong></p>
 </div>

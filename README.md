@@ -45,29 +45,9 @@ I love playing chess! Let's play a match sometime.
 
 ---
 
-## 💻 LeetCode Progress
+## 📊 LeetCode Stats
 
-[![LeetCode user Kashyup_Gaud](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Kashyup_Gaud/)
-
-> **Rank**: 1,458,672
-
----
-
-### 🧩 Problem-Solving Journey  
-*(Auto-updated daily)*
-
-<!-- leetcode-stats-start -->
-
-| Difficulty | Solved |
-|-----------|--------|
-| 🟩 **Easy** | 49 |
-| 🟧 **Medium** | 41 |
-| 🟥 **Hard** | 3 |
-| ⭐ **Total** | 93 Solved |
-
-> 93 problems solved
-
-<!-- leetcode-stats-end -->
+[![Leetcode Stats](https://leetcard.jacoblin.cool/Kashyup_Gaud)](https://leetcode.com/Kashyup_Gaud)
 
 ---
 
@@ -76,6 +56,3 @@ I love playing chess! Let's play a match sometime.
 
 ---
 
-## 📊 LeetCode Stats
-
-[![Leetcode Stats](https://leetcard.jacoblin.cool/Kashyup_Gaud)](https://leetcode.com/Kashyup_Gaud)

@@ -60,12 +60,6 @@
     <img src="https://leetcard.jacoblin.cool/Kashyup_Gaud?theme=dark&ext=activity" alt="LeetCode Stats" />
   </a>
   
-  <p>
-    <img src="https://img.shields.io/badge/Total_Solved-97-success?style=flat-square&color=239120" alt="Total" />
-    <img src="https://img.shields.io/badge/Easy-51-green?style=flat-square" alt="Easy" />
-    <img src="https://img.shields.io/badge/Medium-43-orange?style=flat-square" alt="Medium" />
-    <img src="https://img.shields.io/badge/Hard-3-red?style=flat-square" alt="Hard" />
-  </p>
 </div>
 
 ---

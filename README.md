@@ -1,6 +1,5 @@
 <div align="center">
   <h1>
-    <img src="https://media.giphy.com/media/hvRJCLFzcasrMEl1iG/giphy.gif" width="30px" alt="wave"/>
     Hi there, I'm Kashyup!
   </h1>
   

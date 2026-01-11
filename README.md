@@ -75,7 +75,6 @@
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kash-gg&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117" alt="Contribution Graph"/>
-[![Kashyup's GitHub stats](https://github-readme-stats.vercel.app/api?username=kash-gg&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
@@ -127,6 +126,7 @@
   <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" />
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
   <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" />
+  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" />
 </div>
 
 <div align="center">

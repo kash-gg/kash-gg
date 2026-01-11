@@ -71,9 +71,7 @@
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kash-gg&layout=compact&langs_count=8&theme=tokyonight&border_radius=10&hide_border=true&bg_color=0d1117"/>
 </div>
 
-<div align="center">
-[![GitHub Streak](https://streak-stats.demolab.com/?user=kash-gg)](https://git.io/streak-stats)
-</div>
+[![GitHub Streak](https://streak-stats.demolab.com?user=kash-gg&theme=dark&hide_border=true)](https://git.io/streak-stats)
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kash-gg&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117" alt="Contribution Graph"/>

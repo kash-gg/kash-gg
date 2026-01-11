@@ -72,7 +72,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kash-gg&theme=tokyonight&hide_border=true&border_radius=10&background=0d1117" alt="GitHub Streak"/>
+[![GitHub Streak](https://streak-stats.demolab.com/?user=kash-gg)](https://git.io/streak-stats)
 </div>
 
 <div align="center">

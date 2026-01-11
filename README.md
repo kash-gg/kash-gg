@@ -75,7 +75,7 @@
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kash-gg&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117" alt="Contribution Graph"/>
-[![GitHub Streak](https://streak-stats.demolab.com?user=kash-gg&theme=dark&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=kash-gg&theme=dark&hide_border=true)](https://git.io/streak-stats)
 
 ---
 

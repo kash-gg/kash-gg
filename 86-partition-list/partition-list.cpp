@@ -32,8 +32,7 @@ public:
         big -> next= nullptr;
 
         ListNode* result = slist->next;
-        delete slist;
-        delete blist;
+        
         return result;
     }
 };

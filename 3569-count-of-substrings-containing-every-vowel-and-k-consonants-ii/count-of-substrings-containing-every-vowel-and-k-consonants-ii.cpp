@@ -6,10 +6,8 @@ public:
         int consonants = 0;
         long long ans = 0;
         int i = 0;
-        int extra = 0;  // Tracks redundant vowels we've trimmed from the left
-
+        int extra = 0;
         for (int j = 0; j < word.size(); j++) {
-            // 1. Expand the window
             if (word[j] == 'a' || word[j] == 'e' || word[j] == 'i' ||
                 word[j] == 'o' || word[j] == 'u') {
                 a[word[j]]++;
@@ -19,8 +17,6 @@ public:
             } else {
                 consonants++;
             }
-
-            // 2. Shrink from left if consonants exceed k
             while (consonants > k) {
                 if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' ||
                     word[i] == 'o' || word[i] == 'u') {
@@ -32,21 +28,19 @@ public:
                     consonants--;
                 }
                 i++;
-                extra = 0; // Constraints broke, so reset extra valid starts
+                extra = 0; 
             }
-
-            // 3. Trim redundant vowels from the left to count all valid starting points
-            // We permanently remove them and add to `extra`
+            
+        
             while (i < j && (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' ||
-                             word[i] == 'o' || word[i] == 'u') && a[word[i]] > 1) {
+              word[i] == 'o' || word[i] == 'u') && a[word[i]] > 1) {
                 a[word[i]]--;
-                i++;
                 extra++;
+                i++;
             }
-
-            // 4. Count valid windows
+            
             if (Vowel_Present == 5 && consonants == k) {
-                ans += (1 + extra);
+                ans += (1 + extra); 
             }
         }
         return ans;

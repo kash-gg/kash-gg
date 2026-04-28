@@ -1,164 +1,138 @@
-<div align="center">
-  <h1>
-    Hi there, I'm Kashyup!
-  </h1>
-  
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9FFF&center=true&vCenter=true&random=false&width=600&lines=Student+%7C+Aspiring+Developer;Competitive+Programmer;Full+Stack+Developer;AI+%26+ML+Enthusiast)](https://git.io/typing-svg)
-  
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=kash-gg&label=Profile%20Views&color=0066cc&style=for-the-badge" alt="Profile views"/>
-  </p>
-</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6&height=300&section=header&text=Hi%20there!%20I'm%20Kashyup&fontSize=90&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20|%20DSA%20Enthusiast%20|%20Building%20the%20Future&descAlignY=51&descAlign=55" width="100%"/>
+</p>
 
----
-
-## ✨ About Me
-
-- 💻 **Passionate** about solving complex problems through elegant code
-- 🎓 **Currently learning** and building with **Python, C++, Java, JavaScript, React, Node.js**
-- 🔍 **Always exploring** cutting-edge technologies and innovations
-- 🎯 **Focus**: Data Structures, Algorithms & Full-Stack Development
-- 🌟 **Dream**: Creating impactful products that solve real-world problems
-- 🤖 **Interests**: AI/ML, Blockchain, Web3, Progressive Web Apps
-
----
-
-## 🌟 Featured Projects
-
-### 🔐 Self-Sovereign Identity (SSI) Progressive Web App
-
-<div align="center">
-  <a href="https://github.com/kash-gg/Project_SSI">
-    <img src="https://img.shields.io/badge/🔗_View_Project-181717?style=for-the-badge" alt="github" />
+<p align="center">
+  <a href="https://github.com/kash-gg">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=F0F6FC" alt="GitHub"/>
   </a>
-</div>
-
-> A Progressive Web App for Academic Credential Verification using Decentralized Identifiers (DIDs) and Verifiable Credentials with MongoDB backend authentication.
-
-**Tech Stack**: React | Node.js | MongoDB | Web Crypto API | JWT | PWA
+  <a href="https://linkedin.com/in/kashyup-gaud-865a50186/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://leetcode.com/u/Kashyup_Gaud/">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+  </a>
+  <a href="https://kashyup-gaud.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-2E9FFF?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio"/>
+  </a>
+</p>
 
 ---
 
-###  SecureFlow - PBL Project
+## 👨‍💻 About Me
 
-<div align="center">
-  <a href="https://github.com/kash-gg/PBL-SecureFlow">
-    <img src="https://img.shields.io/badge/🔗_View_Project-181717?style=for-the-badge" alt="github" />
-  </a>
-</div>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=2E9FFF&center=true&vCenter=true&width=600&lines=Full-Stack+Developer;DSA+Problem+Solver;Web3+Enthusiast;Building+Impactful+Products;Open+Source+Contributor" alt="Typing SVG"/>
+</p>
 
-> Security-focused application with advanced authentication and data protection.
-
-**Tech Stack**: Java | Security Protocols
+<p align="center">
+  I'm a <strong>3rd-year Computer Science student</strong> based in <strong>Pune, India</strong>, passionate about building scalable web applications, exploring cloud technologies, and solving complex algorithmic problems. Currently working on a capstone project focused on cross-cultural collaboration in distributed teams.
+</p>
 
 ---
 
-##  LeetCode Stats
+## 🛠️ Tech Stack
 
-<div align="center">
-  <a href="https://leetcode.com/Kashyup_Gaud">
-    <img src="https://leetcard.jacoblin.cool/Kashyup_Gaud?theme=dark&ext=activity" alt="LeetCode Stats" />
-  </a>
-  
-</div>
-
----
-
-## 📈 GitHub Stats
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kash-gg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&border_radius=10&hide_border=true&bg_color=0d1117"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kash-gg&layout=compact&langs_count=8&theme=tokyonight&border_radius=10&hide_border=true&bg_color=0d1117"/>
-</div>
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=kash-gg&theme=dark&hide_border=true)](https://git.io/streak-stats)
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kash-gg&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117" alt="Contribution Graph"/>
-
----
-
-## ⚡ Tech Stack
-
-<div align="center">
-  <h3>� Programming Languages</h3>
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
-</div>
-
-<div align="center">
-  <h3>🌐 Frontend Development</h3>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" />
-</div>
-
-<div align="center">
-  <h3>⚙️ Backend Development</h3>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-13AA52?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
-</div>
-
-<div align="center">
-  <h3>🤖 AI/ML & Data Science</h3>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-</div>
-
-<div align="center">
-  <h3>🔧 Tools & Technologies</h3>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" />
-  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" />
-</div>
-
-<div align="center">
-  <h3>🎨 UI/UX & Design</h3>
-  <img src="https://img.shields.io/badge/JavaFX-007396?style=for-the-badge&logo=oracle&logoColor=white" />
-  <img src="https://img.shields.io/badge/Responsive_Design-000000?style=for-the-badge&logo=css3&logoColor=white" />
-</div>
+<table align="center">
+  <tr>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VSCode"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion"/>
+    </td>
+    <td align="center" width="16%">
+      <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🔗 Connect With Me
+## 📊 GitHub Stats
 
-<div align="center">
-  <a href="https://github.com/kash-gg" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub" />
-  </a>
-  <a href="https://www.linkedin.com/in/kashyup-gaud-865a50186/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
-  </a>
-  <a href="https://leetcode.com/u/Kashyup_Gaud/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
-  </a>
-  <a href="https://kashyup-gaud.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-4A4A4A?style=for-the-badge&logo=firefox" alt="Portfolio" />
-  </a>
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kash-gg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=2E9FFF&icon_color=00ff88&text_color=c9d1d9&ring_color=2E9FFF" height="180" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kash-gg&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=2E9FFF&text_color=c9d1d9" height="180" alt="Top Languages"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=kash-gg&theme=tokyonight-duo&hide_border=true&background=0d1117&stroke=2E9FFF&ring=00ff88&fire=ff6b35&currStreakLabel=2E9FFF&sideLabels=2E9FFF&dates=c9d1d9" alt="Streak Stats"/>
+</p>
 
 ---
 
-## 🎮 Fun Fact
+## 💪 LeetCode
 
-<div align="center">
-  <p>
-    <strong>🚀 "Code is like chess: every move counts."</strong>
-</div>
+<p align="center">
+  <a href="https://leetcode.com/u/Kashyup_Gaud/">
+    <img src="https://leetcard.jacoblin.cool/Kashyup_Gaud?theme=dark&ext=activity&border=0&radius=12" alt="LeetCode Stats"/>
+  </a>
+</p>
+
+---
+
+## 📈 Activity Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kash-gg&theme=tokyo-night&color=2E9FFF&line=00ff88&point=ffffff&area=true&hide_border=true&custom_title=Kashyup's+Contribution+Graph" alt="Activity Graph"/>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation"/>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6&height=100&section=footer&text=Thanks+for+visiting!+%F0%9F%91%8B&fontSize=20&fontColor=00ff88&fontAlignY=65&animation=fadeIn" width="100%"/>
+</p>

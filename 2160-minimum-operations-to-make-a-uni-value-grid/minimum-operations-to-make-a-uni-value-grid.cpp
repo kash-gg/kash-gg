@@ -12,14 +12,12 @@ public:
         for (int num : nums) {
             if (num % x != rem) return -1;
         }
-        
         sort(nums.begin(), nums.end());
         int median = nums[nums.size() / 2];
         int operations = 0;
         for (int num : nums) {
             operations += abs(num - median) / x;
         }
-        
         return operations;
     }
 };

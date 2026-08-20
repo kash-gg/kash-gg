@@ -26,7 +26,7 @@
 ## 👨‍💻 About Me
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=2E9FFF&center=true&vCenter=true&width=600&lines=3rd+Year+CSE+Student;Full-Stack+Developer;Cloud+%26+Web3+Explorer;DSA+Enthusiast" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=2E9FFF&center=true&vCenter=true&width=600&lines=4th+Year+CSE+Student;Full-Stack+Developer;Cloud+%26+Web3+Explorer;DSA+Enthusiast" />
 </p>
 
 <p align="center">

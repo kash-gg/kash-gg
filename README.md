@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  I'm a <strong>3rd-year Computer Science student</strong> based in <strong>Pune, India</strong>.  
+  I'm a <strong>4th-year Computer Science student</strong> based in <strong>Pune, India</strong>.  
   I focus on building scalable applications, writing clean code, and solving algorithmic challenges.
 </p>
 
